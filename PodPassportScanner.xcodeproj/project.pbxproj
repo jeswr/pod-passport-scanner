@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B447A877AC5BB6A08482E6C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9F26CCCAC81EE072101E88 /* RootView.swift */; };
+		11FF2AA2C24F195E08191052 /* BundleUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A54028CB1DB896F80D6C7D /* BundleUploader.swift */; };
+		1637D159564BEAFEDEFFF700 /* emrtd-bundle.json in Resources */ = {isa = PBXBuildFile; fileRef = 786219B9754A1BE842DBB7E0 /* emrtd-bundle.json */; };
+		1E3DD377D50717CCD31EB475 /* ChipReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7963708354315C48AA262A0E /* ChipReader.swift */; };
+		23FA9986067096ACE7C862CD /* FlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338C49FD6C7AAE4F044FD07B /* FlowUITests.swift */; };
+		339202D60BC06E6FA8BCE958 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F883CE4443858E191472ED1D /* HomeView.swift */; };
+		3FD049EFD04A7C7AFD1F54BC /* MockChipReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADC9442647AB2F187FFF27D /* MockChipReader.swift */; };
+		485691447F66693F29AE5F86 /* DoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4D6424816A6E663682E194 /* DoneView.swift */; };
+		57089CE224799A4392D432BA /* IssuerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B30F252F48A86F3C1BE60EF /* IssuerSession.swift */; };
+		5BAAE995B2F0B6F4417AA5B7 /* MRZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966FCD36DB09E3D67E0ACB1E /* MRZTests.swift */; };
+		5DAE47DAF7193173549DF6B7 /* UploaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED240DFA06C8A1C22FCB9E6B /* UploaderTests.swift */; };
+		5EF3AD0CB53807EBB3CAA849 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93F54C84A3FF00417CA9CCB /* UploadView.swift */; };
+		6F378C3AA3916E5080E24AFC /* NFCReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F4C1326A64E0C39CE3A3B /* NFCReadView.swift */; };
+		712BC8C3AC8D9E40DA17AFC7 /* QRPayloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF64CC106C69FAD1F55CD80A /* QRPayloadTests.swift */; };
+		71F17448892F43E21A6E8AAE /* PodPassportScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988C219DEA3C742F5441A78 /* PodPassportScannerApp.swift */; };
+		76D7F99AD208D906DB7A4C97 /* QRScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282AC38046A36F189C4328BA /* QRScanView.swift */; };
+		AB51228EA37C5CCA6C6528EF /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E588E14375252D918693BD /* ReviewView.swift */; };
+		BE819D574238A0F580F3B691 /* ChipBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB84D893A89B69050B4AED94 /* ChipBundle.swift */; };
+		C6A0BFD3316E383C56EA3F98 /* MRZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FFE14269BF10EF1731508 /* MRZ.swift */; };
+		CDBB4C00B27E0DB37DAB431C /* NFCPassportReader in Frameworks */ = {isa = PBXBuildFile; productRef = 5D150BD236E7C49C8D1C6EF4 /* NFCPassportReader */; };
+		CEB25E486FF4DEEC4E53058C /* ChipBundleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2192441653CF283D0FD66AAD /* ChipBundleTests.swift */; };
+		D7C114F57145C9E17A144FD0 /* NFCChipReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027848A9A724C4136ACFE23 /* NFCChipReader.swift */; };
+		E01E78F1467502CF166D8D8D /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9756CBD01C678FF7F561F463 /* AppModel.swift */; };
+		E10F4AD2929434ECC309A22F /* MRZCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9AFF43ECFBF0DD70899C51 /* MRZCaptureView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C1C4C7A649FACC9444145AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20F5796AEBC506EA1276CCB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0AEBF52BE352CF918D667FE;
+			remoteInfo = PodPassportScanner;
+		};
+		C5F78B8199385DDA447A2C81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20F5796AEBC506EA1276CCB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0AEBF52BE352CF918D667FE;
+			remoteInfo = PodPassportScanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		026F4C1326A64E0C39CE3A3B /* NFCReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReadView.swift; sourceTree = "<group>"; };
+		04A54028CB1DB896F80D6C7D /* BundleUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleUploader.swift; sourceTree = "<group>"; };
+		08E588E14375252D918693BD /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		1ADC9442647AB2F187FFF27D /* MockChipReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockChipReader.swift; sourceTree = "<group>"; };
+		2192441653CF283D0FD66AAD /* ChipBundleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipBundleTests.swift; sourceTree = "<group>"; };
+		222FFE14269BF10EF1731508 /* MRZ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZ.swift; sourceTree = "<group>"; };
+		282AC38046A36F189C4328BA /* QRScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanView.swift; sourceTree = "<group>"; };
+		284E3A863F34697524EDD7C8 /* PodPassportScannerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PodPassportScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		338C49FD6C7AAE4F044FD07B /* FlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowUITests.swift; sourceTree = "<group>"; };
+		4EE3B1F5C0C0E82CE49FB038 /* PodPassportScanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PodPassportScanner.entitlements; sourceTree = "<group>"; };
+		5B30F252F48A86F3C1BE60EF /* IssuerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuerSession.swift; sourceTree = "<group>"; };
+		786219B9754A1BE842DBB7E0 /* emrtd-bundle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "emrtd-bundle.json"; sourceTree = "<group>"; };
+		7963708354315C48AA262A0E /* ChipReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipReader.swift; sourceTree = "<group>"; };
+		8A9F26CCCAC81EE072101E88 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		966FCD36DB09E3D67E0ACB1E /* MRZTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZTests.swift; sourceTree = "<group>"; };
+		9756CBD01C678FF7F561F463 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		9F4D6424816A6E663682E194 /* DoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneView.swift; sourceTree = "<group>"; };
+		A988C219DEA3C742F5441A78 /* PodPassportScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodPassportScannerApp.swift; sourceTree = "<group>"; };
+		AC3F9C9A36F1D9C4080442AF /* PodPassportScanner.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PodPassportScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA9AFF43ECFBF0DD70899C51 /* MRZCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZCaptureView.swift; sourceTree = "<group>"; };
+		C027848A9A724C4136ACFE23 /* NFCChipReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCChipReader.swift; sourceTree = "<group>"; };
+		CD6A046228B5509F7E523C67 /* PodPassportScannerUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PodPassportScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2EAEB18614C92F886FF5DCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DF64CC106C69FAD1F55CD80A /* QRPayloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRPayloadTests.swift; sourceTree = "<group>"; };
+		ED240DFA06C8A1C22FCB9E6B /* UploaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploaderTests.swift; sourceTree = "<group>"; };
+		F883CE4443858E191472ED1D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F93F54C84A3FF00417CA9CCB /* UploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadView.swift; sourceTree = "<group>"; };
+		FB84D893A89B69050B4AED94 /* ChipBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipBundle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2F3D9B54D70E7F9FB754DD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBB4C00B27E0DB37DAB431C /* NFCPassportReader in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		148CC83BBCAAEC87037F1191 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				338C49FD6C7AAE4F044FD07B /* FlowUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		2C6502011E581FE62E2C6DF2 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2192441653CF283D0FD66AAD /* ChipBundleTests.swift */,
+				966FCD36DB09E3D67E0ACB1E /* MRZTests.swift */,
+				DF64CC106C69FAD1F55CD80A /* QRPayloadTests.swift */,
+				ED240DFA06C8A1C22FCB9E6B /* UploaderTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		50A7F00FCF694758F23F6B41 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E43F017A74407F17630542C1 /* SamplePassport */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5F3C7690C6E290E821220DFF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04A54028CB1DB896F80D6C7D /* BundleUploader.swift */,
+				7963708354315C48AA262A0E /* ChipReader.swift */,
+				1ADC9442647AB2F187FFF27D /* MockChipReader.swift */,
+				C027848A9A724C4136ACFE23 /* NFCChipReader.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5F523A23A9F161A65EC429B0 = {
+			isa = PBXGroup;
+			children = (
+				E579B8B933CA1E0C2D308495 /* Sources */,
+				2C6502011E581FE62E2C6DF2 /* Tests */,
+				148CC83BBCAAEC87037F1191 /* UITests */,
+				F93F257E47E27AFF31AFB991 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		712177DA48FE117B7F0345FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F4D6424816A6E663682E194 /* DoneView.swift */,
+				F883CE4443858E191472ED1D /* HomeView.swift */,
+				BA9AFF43ECFBF0DD70899C51 /* MRZCaptureView.swift */,
+				026F4C1326A64E0C39CE3A3B /* NFCReadView.swift */,
+				282AC38046A36F189C4328BA /* QRScanView.swift */,
+				08E588E14375252D918693BD /* ReviewView.swift */,
+				F93F54C84A3FF00417CA9CCB /* UploadView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E57D242ABE7707E76733F69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB84D893A89B69050B4AED94 /* ChipBundle.swift */,
+				5B30F252F48A86F3C1BE60EF /* IssuerSession.swift */,
+				222FFE14269BF10EF1731508 /* MRZ.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9B8DC1B7215E57EF840F2B4A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9756CBD01C678FF7F561F463 /* AppModel.swift */,
+				A988C219DEA3C742F5441A78 /* PodPassportScannerApp.swift */,
+				8A9F26CCCAC81EE072101E88 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E43F017A74407F17630542C1 /* SamplePassport */ = {
+			isa = PBXGroup;
+			children = (
+				786219B9754A1BE842DBB7E0 /* emrtd-bundle.json */,
+			);
+			path = SamplePassport;
+			sourceTree = "<group>";
+		};
+		E579B8B933CA1E0C2D308495 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D2EAEB18614C92F886FF5DCE /* Info.plist */,
+				4EE3B1F5C0C0E82CE49FB038 /* PodPassportScanner.entitlements */,
+				9B8DC1B7215E57EF840F2B4A /* App */,
+				8E57D242ABE7707E76733F69 /* Models */,
+				50A7F00FCF694758F23F6B41 /* Resources */,
+				5F3C7690C6E290E821220DFF /* Services */,
+				712177DA48FE117B7F0345FC /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F93F257E47E27AFF31AFB991 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC3F9C9A36F1D9C4080442AF /* PodPassportScanner.app */,
+				284E3A863F34697524EDD7C8 /* PodPassportScannerTests.xctest */,
+				CD6A046228B5509F7E523C67 /* PodPassportScannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D39A9899904BCA576FA20D8 /* PodPassportScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A0B86C47164E15EDBA7C39C /* Build configuration list for PBXNativeTarget "PodPassportScannerTests" */;
+			buildPhases = (
+				E7B62847F70870B4D759B422 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8908AB2CB39AEEC59E838EB6 /* PBXTargetDependency */,
+			);
+			name = PodPassportScannerTests;
+			packageProductDependencies = (
+			);
+			productName = PodPassportScannerTests;
+			productReference = 284E3A863F34697524EDD7C8 /* PodPassportScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9E474E6541D4F42D3668BC1 /* PodPassportScannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D487D17C7339DA7C9A3FA0 /* Build configuration list for PBXNativeTarget "PodPassportScannerUITests" */;
+			buildPhases = (
+				C7153761D04010CE535D5F6F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09728FD4CC03EB483DA46609 /* PBXTargetDependency */,
+			);
+			name = PodPassportScannerUITests;
+			packageProductDependencies = (
+			);
+			productName = PodPassportScannerUITests;
+			productReference = CD6A046228B5509F7E523C67 /* PodPassportScannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F0AEBF52BE352CF918D667FE /* PodPassportScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E56F495423E5BA783B0E18A /* Build configuration list for PBXNativeTarget "PodPassportScanner" */;
+			buildPhases = (
+				DD5438B426620C8EE8D42C33 /* Sources */,
+				1653AB55EB4E5DD853F36D60 /* Resources */,
+				F2F3D9B54D70E7F9FB754DD3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PodPassportScanner;
+			packageProductDependencies = (
+				5D150BD236E7C49C8D1C6EF4 /* NFCPassportReader */,
+			);
+			productName = PodPassportScanner;
+			productReference = AC3F9C9A36F1D9C4080442AF /* PodPassportScanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20F5796AEBC506EA1276CCB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D9E474E6541D4F42D3668BC1 = {
+						TestTargetID = F0AEBF52BE352CF918D667FE;
+					};
+					F0AEBF52BE352CF918D667FE = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6F7011EE48F03C4F0904CE5A /* Build configuration list for PBXProject "PodPassportScanner" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5F523A23A9F161A65EC429B0;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				57DB416103DA5004354367F5 /* XCRemoteSwiftPackageReference "NFCPassportReader" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F93F257E47E27AFF31AFB991 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0AEBF52BE352CF918D667FE /* PodPassportScanner */,
+				1D39A9899904BCA576FA20D8 /* PodPassportScannerTests */,
+				D9E474E6541D4F42D3668BC1 /* PodPassportScannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1653AB55EB4E5DD853F36D60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1637D159564BEAFEDEFFF700 /* emrtd-bundle.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7153761D04010CE535D5F6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FA9986067096ACE7C862CD /* FlowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5438B426620C8EE8D42C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01E78F1467502CF166D8D8D /* AppModel.swift in Sources */,
+				11FF2AA2C24F195E08191052 /* BundleUploader.swift in Sources */,
+				BE819D574238A0F580F3B691 /* ChipBundle.swift in Sources */,
+				1E3DD377D50717CCD31EB475 /* ChipReader.swift in Sources */,
+				485691447F66693F29AE5F86 /* DoneView.swift in Sources */,
+				339202D60BC06E6FA8BCE958 /* HomeView.swift in Sources */,
+				57089CE224799A4392D432BA /* IssuerSession.swift in Sources */,
+				C6A0BFD3316E383C56EA3F98 /* MRZ.swift in Sources */,
+				E10F4AD2929434ECC309A22F /* MRZCaptureView.swift in Sources */,
+				3FD049EFD04A7C7AFD1F54BC /* MockChipReader.swift in Sources */,
+				D7C114F57145C9E17A144FD0 /* NFCChipReader.swift in Sources */,
+				6F378C3AA3916E5080E24AFC /* NFCReadView.swift in Sources */,
+				71F17448892F43E21A6E8AAE /* PodPassportScannerApp.swift in Sources */,
+				76D7F99AD208D906DB7A4C97 /* QRScanView.swift in Sources */,
+				AB51228EA37C5CCA6C6528EF /* ReviewView.swift in Sources */,
+				0B447A877AC5BB6A08482E6C /* RootView.swift in Sources */,
+				5EF3AD0CB53807EBB3CAA849 /* UploadView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7B62847F70870B4D759B422 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB25E486FF4DEEC4E53058C /* ChipBundleTests.swift in Sources */,
+				5BAAE995B2F0B6F4417AA5B7 /* MRZTests.swift in Sources */,
+				712BC8C3AC8D9E40DA17AFC7 /* QRPayloadTests.swift in Sources */,
+				5DAE47DAF7193173549DF6B7 /* UploaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09728FD4CC03EB483DA46609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0AEBF52BE352CF918D667FE /* PodPassportScanner */;
+			targetProxy = 3C1C4C7A649FACC9444145AC /* PBXContainerItemProxy */;
+		};
+		8908AB2CB39AEEC59E838EB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0AEBF52BE352CF918D667FE /* PodPassportScanner */;
+			targetProxy = C5F78B8199385DDA447A2C81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02E91C5E7C89EDAA48ED877D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/PodPassportScanner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.jeswr.PodPassportScanner;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		49F243E93C43B29DB6320594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/PodPassportScanner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.jeswr.PodPassportScanner;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6F2576FF7863A372388E2CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.jeswr.PodPassportScannerUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PodPassportScanner;
+			};
+			name = Release;
+		};
+		7464CB88007A0C3B407B1F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		87EFFBC87FD51C58A33E37C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.jeswr.PodPassportScannerTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PodPassportScanner.app/PodPassportScanner";
+			};
+			name = Debug;
+		};
+		A80A9E456B3655EBB7A0BFDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.jeswr.PodPassportScannerUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PodPassportScanner;
+			};
+			name = Debug;
+		};
+		B0AE9F7BD410D6C125579E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		DD5FB8334DB2A826A5E7C671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.jeswr.PodPassportScannerTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PodPassportScanner.app/PodPassportScanner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05D487D17C7339DA7C9A3FA0 /* Build configuration list for PBXNativeTarget "PodPassportScannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80A9E456B3655EBB7A0BFDE /* Debug */,
+				6F2576FF7863A372388E2CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2E56F495423E5BA783B0E18A /* Build configuration list for PBXNativeTarget "PodPassportScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F243E93C43B29DB6320594 /* Debug */,
+				02E91C5E7C89EDAA48ED877D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5A0B86C47164E15EDBA7C39C /* Build configuration list for PBXNativeTarget "PodPassportScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87EFFBC87FD51C58A33E37C5 /* Debug */,
+				DD5FB8334DB2A826A5E7C671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6F7011EE48F03C4F0904CE5A /* Build configuration list for PBXProject "PodPassportScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0AE9F7BD410D6C125579E36 /* Debug */,
+				7464CB88007A0C3B407B1F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57DB416103DA5004354367F5 /* XCRemoteSwiftPackageReference "NFCPassportReader" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndyQ/NFCPassportReader";
+			requirement = {
+				kind = exactVersion;
+				version = 2.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D150BD236E7C49C8D1C6EF4 /* NFCPassportReader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57DB416103DA5004354367F5 /* XCRemoteSwiftPackageReference "NFCPassportReader" */;
+			productName = NFCPassportReader;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 20F5796AEBC506EA1276CCB3 /* Project object */;
+}
