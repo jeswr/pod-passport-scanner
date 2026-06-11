@@ -14,6 +14,7 @@ default_platform(:ios)
 
 PROJECT = "PodPassportScanner.xcodeproj"
 SCHEME  = "PodPassportScanner"
+APP_APPLE_ID = "6779202370" # App Store Connect app record (numeric Apple ID)
 
 platform :ios do
   desc "Build a signed Release archive and upload it to TestFlight"
@@ -53,6 +54,8 @@ platform :ios do
 
     upload_to_testflight(
       api_key: api_key,
+      apple_id: APP_APPLE_ID,
+      app_identifier: "org.jeswr.PodPassportScanner",
       skip_waiting_for_build_processing: true,
       # Internal testers (≤100, on the team) need no Beta App Review; add them in
       # App Store Connect → TestFlight after the first build finishes processing.
