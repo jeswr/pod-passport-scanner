@@ -40,17 +40,26 @@ struct ReviewView: View {
                     }
                 }
             }
-
+        }
+        .navigationTitle("Review")
+        .navigationBarTitleDisplayMode(.inline)
+        .safeAreaInset(edge: .bottom) {
+            // Pinned primary action: on a credential-capture screen the
+            // "send" decision must always be reachable, never scrolled away
+            // below a long files/destination list.
             Button {
                 model.confirmedForUpload()
             } label: {
                 Text("Send to issuer")
                     .frame(maxWidth: .infinity)
             }
+            .buttonStyle(.borderedProminent)
+            .controlSize(.large)
+            .padding()
+            .background(.bar)
             .accessibilityIdentifier("review.sendButton")
+            .accessibilityHint("Sends the chip files shown above to the issuer endpoint.")
         }
-        .navigationTitle("Review")
-        .navigationBarTitleDisplayMode(.inline)
     }
 
     private func photo(_ jpeg: Data?) -> some View {
@@ -70,11 +79,18 @@ struct ReviewView: View {
         .clipShape(RoundedRectangle(cornerRadius: 6))
     }
 
+    @ViewBuilder
     private func row(_ label: String, _ value: String, id: String? = nil) -> some View {
         VStack(alignment: .leading, spacing: 2) {
             Text(label).font(.caption).foregroundStyle(.secondary)
-            Text(value)
-                .accessibilityIdentifier(id ?? "")
+            if let id {
+                Text(value)
+                    .accessibilityIdentifier(id)
+                    .accessibilityLabel("\(label): \(value)")
+            } else {
+                Text(value)
+                    .accessibilityLabel("\(label): \(value)")
+            }
         }
     }
 

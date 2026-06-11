@@ -22,27 +22,17 @@ final class FlowUITests: XCTestCase {
         // Step 1: issuer session (manual entry path)
         let endpointField = app.textFields["qr.endpointField"]
         XCTAssertTrue(endpointField.waitForExistence(timeout: 5))
-        endpointField.tap()
-        endpointField.typeText("https://issuer.example/api/emrtd/sessions/uitest-1")
-        let sessionField = app.textFields["qr.sessionIdField"]
-        sessionField.tap()
-        sessionField.typeText("uitest-1")
-        let secretField = app.textFields["qr.secretField"]
-        secretField.tap()
-        secretField.typeText("uitest-secret")
+        type("https://issuer.example/api/emrtd/sessions/uitest-1", into: endpointField, in: app)
+        type("uitest-1", into: app.textFields["qr.sessionIdField"], in: app)
+        type("uitest-secret", into: app.textFields["qr.secretField"], in: app)
         app.buttons["qr.continueButton"].tap()
 
         // Step 2: MRZ key (manual entry path; ICAO specimen values)
         let docField = app.textFields["mrz.docNumberField"]
         XCTAssertTrue(docField.waitForExistence(timeout: 5))
-        docField.tap()
-        docField.typeText("L898902C3")
-        let dobField = app.textFields["mrz.dobField"]
-        dobField.tap()
-        dobField.typeText("740812")
-        let expiryField = app.textFields["mrz.expiryField"]
-        expiryField.tap()
-        expiryField.typeText("120415")
+        type("L898902C3", into: docField, in: app)
+        type("740812", into: app.textFields["mrz.dobField"], in: app)
+        type("120415", into: app.textFields["mrz.expiryField"], in: app)
         app.buttons["mrz.continueButton"].tap()
 
         // Step 3: chip read (mock reads the bundled sample passport)
@@ -64,5 +54,21 @@ final class FlowUITests: XCTestCase {
         // Reset returns to Home
         app.buttons["done.resetButton"].tap()
         XCTAssertTrue(app.buttons["home.start"].waitForExistence(timeout: 5))
+    }
+
+    /// Taps a text field, waits for keyboard focus, then types — robust against
+    /// the simulator's well-known first-field focus race where `typeText`
+    /// arrives before the keyboard is up and the characters are dropped.
+    private func type(_ text: String, into field: XCUIElement, in app: XCUIApplication) {
+        XCTAssertTrue(field.waitForExistence(timeout: 5), "missing field for \(text)")
+        // Retry tap-until-focused: hasKeyboardFocus flips true once the field
+        // is the first responder and ready to receive synthesized key events.
+        let focused = NSPredicate(format: "hasKeyboardFocus == true")
+        for _ in 0..<3 {
+            field.tap()
+            let exp = XCTNSPredicateExpectation(predicate: focused, object: field)
+            if XCTWaiter().wait(for: [exp], timeout: 2) == .completed { break }
+        }
+        field.typeText(text)
     }
 }
