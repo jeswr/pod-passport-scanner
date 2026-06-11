@@ -19,6 +19,7 @@
 		5BAAE995B2F0B6F4417AA5B7 /* MRZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966FCD36DB09E3D67E0ACB1E /* MRZTests.swift */; };
 		5DAE47DAF7193173549DF6B7 /* UploaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED240DFA06C8A1C22FCB9E6B /* UploaderTests.swift */; };
 		5EF3AD0CB53807EBB3CAA849 /* UploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93F54C84A3FF00417CA9CCB /* UploadView.swift */; };
+		604DD2885A5218F42C8153DC /* MockServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A8786B8E7139586E39D0EF /* MockServiceTests.swift */; };
 		6F378C3AA3916E5080E24AFC /* NFCReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F4C1326A64E0C39CE3A3B /* NFCReadView.swift */; };
 		712BC8C3AC8D9E40DA17AFC7 /* QRPayloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF64CC106C69FAD1F55CD80A /* QRPayloadTests.swift */; };
 		71F17448892F43E21A6E8AAE /* PodPassportScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988C219DEA3C742F5441A78 /* PodPassportScannerApp.swift */; };
@@ -73,6 +74,7 @@
 		BA9AFF43ECFBF0DD70899C51 /* MRZCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZCaptureView.swift; sourceTree = "<group>"; };
 		C027848A9A724C4136ACFE23 /* NFCChipReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCChipReader.swift; sourceTree = "<group>"; };
 		CD6A046228B5509F7E523C67 /* PodPassportScannerUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PodPassportScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A8786B8E7139586E39D0EF /* MockServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceTests.swift; sourceTree = "<group>"; };
 		D2EAEB18614C92F886FF5DCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DF64CC106C69FAD1F55CD80A /* QRPayloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRPayloadTests.swift; sourceTree = "<group>"; };
 		ED240DFA06C8A1C22FCB9E6B /* UploaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploaderTests.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				2192441653CF283D0FD66AAD /* ChipBundleTests.swift */,
+				D2A8786B8E7139586E39D0EF /* MockServiceTests.swift */,
 				966FCD36DB09E3D67E0ACB1E /* MRZTests.swift */,
 				DF64CC106C69FAD1F55CD80A /* QRPayloadTests.swift */,
 				ED240DFA06C8A1C22FCB9E6B /* UploaderTests.swift */,
@@ -358,6 +361,7 @@
 			files = (
 				CEB25E486FF4DEEC4E53058C /* ChipBundleTests.swift in Sources */,
 				5BAAE995B2F0B6F4417AA5B7 /* MRZTests.swift in Sources */,
+				604DD2885A5218F42C8153DC /* MockServiceTests.swift in Sources */,
 				712BC8C3AC8D9E40DA17AFC7 /* QRPayloadTests.swift in Sources */,
 				5DAE47DAF7193173549DF6B7 /* UploaderTests.swift in Sources */,
 			);
