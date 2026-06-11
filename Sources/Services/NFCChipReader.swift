@@ -33,7 +33,7 @@ struct NFCChipReader: ChipReader {
             )
         } catch let error as NFCPassportReaderError {
             if case .UserCanceled = error { throw ChipReaderError.cancelled }
-            throw ChipReaderError.readFailed(error.value)
+            throw ChipReaderError.readFailed(String(describing: error))
         } catch {
             throw ChipReaderError.readFailed(error.localizedDescription)
         }
