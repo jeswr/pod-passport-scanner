@@ -13,9 +13,11 @@ struct UploadView: View {
             if uploading {
                 ProgressView()
                     .controlSize(.large)
+                    .accessibilityHidden(true)
                 Text("Sending to the issuer…")
                     .foregroundStyle(.secondary)
                     .accessibilityIdentifier("upload.progressLabel")
+                    .accessibilityAddTraits(.isStaticText)
             } else if let error {
                 Image(systemName: "exclamationmark.triangle")
                     .font(.system(size: 44))

@@ -77,6 +77,7 @@ struct ReviewView: View {
         .frame(width: 64, height: 84)
         .background(Color(.secondarySystemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 6))
+        .accessibilityLabel(jpeg == nil ? "No passport photo on chip" : "Passport photo from the chip")
     }
 
     @ViewBuilder
@@ -111,6 +112,8 @@ struct ReviewView: View {
                     .font(.caption.monospaced())
                     .foregroundStyle(.tertiary)
             }
+            .accessibilityElement(children: .combine)
+            .accessibilityLabel("\(file.0), \(file.1), \(file.2?.count ?? 0) bytes")
         }
     }
 

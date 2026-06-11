@@ -58,10 +58,13 @@ struct HomeView: View {
         HStack(alignment: .top, spacing: 12) {
             Text("\(number)")
                 .font(.callout.bold())
-                .frame(width: 28, height: 28)
+                .frame(minWidth: 28, minHeight: 28) // grows with Dynamic Type
+                .padding(4)
                 .background(Circle().fill(.tint.opacity(0.15)))
             Text(text)
                 .font(.callout)
         }
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("Step \(number): \(text)")
     }
 }
