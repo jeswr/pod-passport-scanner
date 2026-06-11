@@ -1,5 +1,11 @@
 # Pod Passport Scanner
 
+> ⚠️ **Experimental.** This is a research/reference implementation, not a
+> production product. APIs, the hand-off contract, and the UI may change without
+> notice; it has not been security-audited or certified for handling real
+> identity documents. Use it to explore passport-to-pod credential issuance on
+> [Solid](https://solidproject.org), not as-is in production.
+
 iOS app that reads a passport's NFC chip (ICAO 9303 eMRTD) and hands the chip
 bundle to the **Credential Issuer** web app, which performs passive
 authentication and mints a verifiable credential into the user's Solid pod.
