@@ -51,10 +51,9 @@ Content-Type: application/json
   (3 attempts; PUT is idempotent).
 
 The bundled sample passport (`Sources/Resources/SamplePassport/emrtd-bundle.json`)
-has the same structure as the issuer-side test fixture
-`apps/issuer/test/fixtures/emrtd-bundle.json` (synthetic: ICAO Doc 9303
-specimen MRZ "ANNA MARIA ERIKSSON", placeholder DG2/DG11/DG14/SOD bytes —
-fine for app-side flow testing; it will not pass passive authentication).
+is a byte-for-byte copy of the issuer-side canonical test fixture
+`apps/issuer/test/fixtures/emrtd-bundle.json` (synthetic "JANE DOE" eMRTD with
+real LDS TLV structure and a test-CSCA-signed SOD).
 
 ## Architecture
 

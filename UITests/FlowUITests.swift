@@ -53,7 +53,7 @@ final class FlowUITests: XCTestCase {
         // Step 4: review shows the sample passport's parsed MRZ
         let sendButton = app.buttons["review.sendButton"]
         XCTAssertTrue(sendButton.waitForExistence(timeout: 10))
-        XCTAssertTrue(app.staticTexts["review.fullName"].label.contains("ERIKSSON"))
+        XCTAssertTrue(app.staticTexts["review.fullName"].label.contains("DOE"))
         XCTAssertTrue(app.staticTexts["review.documentNumber"].label.contains("L898902C3"))
         sendButton.tap()
 

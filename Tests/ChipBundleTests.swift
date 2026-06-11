@@ -43,7 +43,9 @@ final class ChipBundleTests: XCTestCase {
 
         let mrz = try XCTUnwrap(bundle.mrzFromDG1)
         let parsed = try MRZParser.parseTD3(contiguous: mrz)
-        XCTAssertEqual(parsed.surname, "ERIKSSON")
+        // Canonical issuer fixture: synthetic "JANE DOE" specimen.
+        XCTAssertEqual(parsed.surname, "DOE")
+        XCTAssertEqual(parsed.givenNames, "JANE")
         XCTAssertEqual(parsed.documentNumber, "L898902C3")
     }
 
