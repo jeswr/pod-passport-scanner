@@ -282,7 +282,7 @@
 						TestTargetID = F0AEBF52BE352CF918D667FE;
 					};
 					F0AEBF52BE352CF918D667FE = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = 7J8623FGRC;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -391,7 +391,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7J8623FGRC;
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -401,6 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.jeswr.PodPassportScanner;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -412,7 +413,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7J8623FGRC;
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -422,6 +423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.jeswr.PodPassportScanner;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};

@@ -1,0 +1,49 @@
+name: TestFlight
+
+# Cuts a TestFlight build on a version tag (e.g. `git tag v0.1.1 && git push --tags`)
+# or on manual dispatch. Needs four repo secrets — see fastlane/Fastfile:
+#   ASC_KEY_ID · ASC_ISSUER_ID · ASC_KEY_P8 (base64 of the .p8) · APPLE_TEAM_ID
+# Runs on a macOS runner (10× Actions minutes) — needs the Actions spend limit raised.
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+jobs:
+  testflight:
+    name: Build & upload to TestFlight
+    runs-on: macos-26
+    timeout-minutes: 60
+    env:
+      ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+      ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
+      APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Guard — secrets present
+        run: |
+          for v in ASC_KEY_ID ASC_ISSUER_ID ASC_KEY_P8 APPLE_TEAM_ID; do
+            if [ -z "${!v}" ]; then echo "::error::missing secret $v"; exit 1; fi
+          done
+
+      - name: Select Xcode
+        run: |
+          sudo xcode-select -s "$(ls -d /Applications/Xcode_26*.app | sort -V | tail -1)/Contents/Developer"
+          xcodebuild -version
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate project
+        run: xcodegen generate
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build & upload to TestFlight
+        run: bundle exec fastlane beta

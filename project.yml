@@ -28,11 +28,11 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: org.jeswr.PodPassportScanner
         CODE_SIGN_STYLE: Automatic
-        # Signing placeholder: set your personal Apple Developer team here (or in
-        # Xcode > Signing & Capabilities) before running on a real device.
-        # Simulator builds work without a team.
-        DEVELOPMENT_TEAM: ""
+        # Apple Developer team (Jesse Wright, individual). Simulator builds work
+        # without a team; device + TestFlight builds use this.
+        DEVELOPMENT_TEAM: "7J8623FGRC"
         TARGETED_DEVICE_FAMILY: "1"
+        VERSIONING_SYSTEM: "apple-generic"
         CURRENT_PROJECT_VERSION: 1
         MARKETING_VERSION: 0.1.0
     info:

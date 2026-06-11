@@ -4,3 +4,12 @@ DerivedData/
 build/
 *.xcresult
 .swiftpm/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/test_output
+*.ipa
+*.dSYM.zip
+vendor/bundle
+.bundle
